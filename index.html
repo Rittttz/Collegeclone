@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nalanda College of Engineering, Chandi | Govt. of Bihar</title>
+  <meta name="description" content="Official Portal Clone of Nalanda College of Engineering (NCE Chandi), an engineering institution under the Science, Technology and Technical Education Dept., Govt. of Bihar." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= TOP ACCESSIBILITY & UTILITY BAR ================= -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <span class="gov-text"><i class="fa-solid fa-landmark"></i> Government of Bihar | DSTTE</span>
+        <div class="accessibility-controls">
+          <span class="ctrl-label">Font:</span>
+          <button id="font-decrease" title="Decrease Font Size">A-</button>
+          <button id="font-normal" title="Normal Font Size">A</button>
+          <button id="font-increase" title="Increase Font Size">A+</button>
+          <span class="divider">|</span>
+          <button id="theme-toggle" title="Toggle High Contrast / Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i> Contrast</button>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="quick-modals-links">
+          <a href="javascript:void(0)" class="open-modal-btn" data-modal="modal-inquiry"><i class="fa-regular fa-envelope"></i> Inquiry</a>
+          <a href="javascript:void(0)" class="open-modal-btn" data-modal="modal-grievance"><i class="fa-solid fa-scale-balanced"></i> Grievance</a>
+          <a href="javascript:void(0)" class="open-modal-btn" data-modal="modal-track"><i class="fa-solid fa-magnifying-glass"></i> Track Status</a>
+          <a href="javascript:void(0)" class="open-modal-btn" data-modal="modal-feedback"><i class="fa-regular fa-comment-dots"></i> Feedback</a>
+        </div>
+        <div class="portal-logins">
+          <div class="dropdown-login">
+            <button class="login-badge-btn"><i class="fa-solid fa-user-lock"></i> Portals <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="dropdown-login-menu">
+              <a href="https://ncechandi.ac.in/faculty-panel/login" target="_blank"><i class="fa-solid fa-chalkboard-user"></i> Faculty Login</a>
+              <a href="https://ncechandi.ac.in/student-panel/login" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Student Login</a>
+              <a href="https://ncechandi.ac.in/admin-panel/login" target="_blank"><i class="fa-solid fa-user-shield"></i> Admin Panel</a>
+              <a href="https://mail.zoho.com" target="_blank"><i class="fa-solid fa-at"></i> Web Mail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER & BRANDING ================= -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-wrapper">
+        <div class="emblem-box">
+          <div class="emblem-circle">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+        </div>
+        <div class="college-identity">
+          <h1 class="college-title">Nalanda College of Engineering</h1>
+          <p class="college-subtitle">नालंदा अभियंत्रण महाविद्यालय, चंडी (नालंदा)</p>
+          <span class="dept-tagline">Department of Science, Technology and Technical Education, Govt. of Bihar</span>
+          <div class="accreditation-badges">
+            <span class="badge"><i class="fa-solid fa-award"></i> AICTE Approved</span>
+            <span class="badge badge-nba"><i class="fa-solid fa-check-double"></i> NBA Accredited (CSE)</span>
+            <span class="badge"><i class="fa-solid fa-university"></i> Affiliated to BEU, Patna</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-right-badges">
+        <div class="digital-badge">
+          <div class="stat-num">2008</div>
+          <div class="stat-lbl">Established</div>
+        </div>
+        <div class="digital-badge">
+          <div class="stat-num">1200+</div>
+          <div class="stat-lbl">Students</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <nav class="primary-nav">
+    <div class="container nav-container">
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i> <span>Menu</span>
+      </button>
+
+      <ul class="nav-list" id="nav-list">
+        <li class="nav-item active"><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+        
+        <li class="nav-item has-dropdown">
+          <a href="#about">About Us <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#about">History & Heritage</a></li>
+            <li><a href="#principal-message">Principal's Message</a></li>
+            <li><a href="#about">Vision & Mission</a></li>
+            <li><a href="#about">Administration & BOG</a></li>
+            <li><a href="#about">Affiliation & Recognition</a></li>
+            <li><a href="#contact">Visit Campus</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="#departments">Academics <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#departments">UG Admission (B.Tech)</a></li>
+            <li><a href="#departments">PG Admission (M.Tech)</a></li>
+            <li><a href="#notices">Academic Calendar</a></li>
+            <li><a href="#notices">Syllabus & Regulations</a></li>
+            <li><a href="javascript:void(0)" class="open-modal-btn" data-modal="modal-grievance">Grievance Redressal</a></li>
+            <li><a href="#about">Anti-Ragging Committee</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="#departments">Departments <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#dept-cse"><i class="fa-solid fa-laptop-code"></i> Computer Science & Engg (NBA)</a></li>
+            <li><a href="#dept-aiml"><i class="fa-solid fa-brain"></i> Artificial Intelligence & ML</a></li>
+            <li><a href="#dept-aero"><i class="fa-solid fa-jet-fighter"></i> Aeronautical Engineering</a></li>
+            <li><a href="#dept-ce"><i class="fa-solid fa-building-columns"></i> Civil Engineering</a></li>
+            <li><a href="#dept-me"><i class="fa-solid fa-gear"></i> Mechanical Engineering</a></li>
+            <li><a href="#dept-eee"><i class="fa-solid fa-bolt"></i> Electrical & Electronics Engg</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="#facilities">Facilities <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#facilities">Computer Center & High-End Labs</a></li>
+            <li><a href="#facilities">Central Library & E-Resources</a></li>
+            <li><a href="#facilities">Hostels & Mess</a></li>
+            <li><a href="#facilities">Sports Complex & Gymnasium</a></li>
+            <li><a href="#facilities">Medical Unit</a></li>
+            <li><a href="#facilities">Wi-Fi Campus Network</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="#notices">TEQIP-III</a></li>
+        <li class="nav-item"><a href="#placements">Training & Placement</a></li>
+        <li class="nav-item"><a href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= LIVE NOTICE TICKER ================= -->
+  <div class="news-ticker">
+    <div class="container ticker-wrapper">
+      <div class="ticker-title">
+        <i class="fa-solid fa-bullhorn fa-shake"></i> Announcements:
+      </div>
+      <div class="ticker-content-track">
+        <div class="ticker-content" id="ticker-content">
+          <span><span class="ticker-badge">New</span> Regarding PMS Nodal Officer & Application Process</span>
+          <span><span class="ticker-badge">Notice</span> First Year Student Induction Program 2026 Batch</span>
+          <span><span class="ticker-badge">Update</span> Marksheet & Provisional Certificate Distribution for 2022-2026 Batch</span>
+          <span><span class="ticker-badge highlight">Accreditation</span> NBA Accredited Programme in Computer Science & Engineering</span>
+          <span><span class="ticker-badge">Exams</span> Revised Mid Sem Exam Schedule for B.Tech 4th & 6th Semesters</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HERO CAROUSEL SECTION ================= -->
+  <section class="hero-slider" id="home">
+    <div class="slides-container">
+      
+      <!-- Slide 1 -->
+      <div class="slide active" style="background: linear-gradient(rgba(4, 25, 54, 0.85), rgba(4, 25, 54, 0.75)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+        <div class="container slide-content">
+          <div class="slide-tag"><i class="fa-solid fa-landmark-dome"></i> Welcome to NCE Chandi</div>
+          <h2 class="slide-title">Engineering Excellence in the Historic Land of Nalanda</h2>
+          <p class="slide-desc">Established in 2008 by the Government of Bihar to impart cutting-edge technical education, foster research, and build world-class engineering leaders.</p>
+          <div class="hero-actions">
+            <a href="#departments" class="btn btn-primary"><i class="fa-solid fa-graduation-cap"></i> Explore Programs</a>
+            <a href="#notices" class="btn btn-outline"><i class="fa-regular fa-bell"></i> Latest Notices</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide" style="background: linear-gradient(rgba(4, 25, 54, 0.85), rgba(4, 25, 54, 0.75)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+        <div class="container slide-content">
+          <div class="slide-tag tag-gold"><i class="fa-solid fa-medal"></i> NBA Accreditation</div>
+          <h2 class="slide-title">National Board of Accreditation Recognized</h2>
+          <p class="slide-desc">Our B.Tech in Computer Science & Engineering is NBA accredited, reflecting our dedication to academic rigor, state-of-the-art laboratories, and high placement outcomes.</p>
+          <div class="hero-actions">
+            <a href="#dept-cse" class="btn btn-gold"><i class="fa-solid fa-award"></i> View CSE Program</a>
+            <a href="#placements" class="btn btn-outline"><i class="fa-solid fa-chart-line"></i> Placement Records</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide" style="background: linear-gradient(rgba(4, 25, 54, 0.85), rgba(4, 25, 54, 0.75)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+        <div class="container slide-content">
+          <div class="slide-tag"><i class="fa-solid fa-microchip"></i> Modern Technologies</div>
+          <h2 class="slide-title">Frontier Disciplines: AI, ML & Aeronautical Engineering</h2>
+          <p class="slide-desc">Expanding technological boundaries with dedicated undergraduate programs in Artificial Intelligence, Machine Learning, and Aeronautical Engineering.</p>
+          <div class="hero-actions">
+            <a href="#departments" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Discover Disciplines</a>
+            <a href="#facilities" class="btn btn-outline"><i class="fa-solid fa-flask"></i> Campus Labs</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slider Controls -->
+    <button class="slider-arrow prev-btn" id="slider-prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="slider-arrow next-btn" id="slider-next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+    <!-- Indicators -->
+    <div class="slider-indicators" id="slider-indicators">
+      <span class="indicator active" data-index="0"></span>
+      <span class="indicator" data-index="1"></span>
+      <span class="indicator" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- ================= QUICK HIGHLIGHTS / PORTAL CARDS ================= -->
+  <section class="quick-portals-section">
+    <div class="container">
+      <div class="portals-grid">
+        
+        <div class="portal-card card-primary">
+          <div class="portal-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="portal-info">
+            <h3>NBA Accreditation</h3>
+            <p>Details and documentation of NBA accredited Computer Science program.</p>
+            <a href="#notices" class="card-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="portal-card card-secondary">
+          <div class="portal-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <div class="portal-info">
+            <h3>AICTE Scholarships</h3>
+            <p>Pragati, Saksham, and Swanath scholarship schemes for eligible students.</p>
+            <a href="https://www.aicte-india.org" target="_blank" class="card-link">Apply Scheme <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="portal-card card-accent">
+          <div class="portal-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="portal-info">
+            <h3>Attendance Portal</h3>
+            <p>Direct view of student attendance records, semester logs, and analytics.</p>
+            <a href="javascript:void(0)" class="card-link open-modal-btn" data-modal="modal-track">Check Attendance <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="portal-card card-dark">
+          <div class="portal-icon"><i class="fa-solid fa-scale-unbalanced"></i></div>
+          <div class="portal-info">
+            <h3>Grievance System</h3>
+            <p>Online submission and transparent tracking for students, staff, and faculty.</p>
+            <a href="javascript:void(0)" class="card-link open-modal-btn" data-modal="modal-grievance">Lodge Grievance <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NOTICES, UPDATES & TENDERS SECTION ================= -->
+  <section class="notices-section" id="notices">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag">Campus Bulletins</span>
+        <h2 class="section-title">Notices, Circulars & Announcements</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="notices-dashboard">
+        <!-- Tabs Header -->
+        <div class="notice-tabs-header">
+          <button class="notice-tab-btn active" data-tab="tab-notices">
+            <i class="fa-regular fa-bell"></i> Official Notices
+          </button>
+          <button class="notice-tab-btn" data-tab="tab-tenders">
+            <i class="fa-solid fa-file-invoice"></i> Tenders & Procurement
+          </button>
+          <button class="notice-tab-btn" data-tab="tab-placement">
+            <i class="fa-solid fa-briefcase"></i> Placements & Drives
+          </button>
+          <button class="notice-tab-btn" data-tab="tab-accolades">
+            <i class="fa-solid fa-trophy"></i> Awards & Accolades
+          </button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="notice-tabs-body">
+          
+          <!-- TAB 1: NOTICES -->
+          <div class="tab-pane active" id="tab-notices">
+            <div class="notice-items-list">
+              
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">31</span>
+                  <span class="month">Aug 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag">General Notice</span>
+                  <h4><a href="javascript:void(0)">Regarding PMS Nodal Officer appointment and scholarship documentation process</a></h4>
+                  <p class="notice-snippet">All eligible students applying for Post-Matric Scholarship (PMS) are advised to coordinate with the designated nodal officer before the deadline.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download" title="Download Circular"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">29</span>
+                  <span class="month">Aug 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag">Examinations</span>
+                  <h4><a href="javascript:void(0)">Regarding Marksheet & Provisional Certificate distribution for 2022-2026 Graduating Batch</a></h4>
+                  <p class="notice-snippet">Passing students can collect their provisional certificates and grade cards from the examination section upon clearance of no-dues.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download" title="Download Circular"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">22</span>
+                  <span class="month">Aug 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag">Academics</span>
+                  <h4><a href="javascript:void(0)">Updated First Semester Class Time Table for Newly Admitted Batch</a></h4>
+                  <p class="notice-snippet">Class schedules for all B.Tech branches including CSE, AIML, CE, ME, and EEE have been revised for the upcoming academic session.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download" title="Download Circular"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">20</span>
+                  <span class="month">Aug 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag">Accounts</span>
+                  <h4><a href="javascript:void(0)">Regarding Development Fee & Annual Admission Fee Submission Notice</a></h4>
+                  <p class="notice-snippet">Guidelines for online fee payment through the official State Bank Collect portal for the academic year 2026-27.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download" title="Download Circular"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">17</span>
+                  <span class="month">Aug 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag">Examinations</span>
+                  <h4><a href="javascript:void(0)">Revised Mid Semester Examination Schedule for B.Tech 4th & 6th Semesters</a></h4>
+                  <p class="notice-snippet">Detailed schedule and room seating arrangements for mid-semester evaluation tests.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download" title="Download Circular"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 2: TENDERS -->
+          <div class="tab-pane" id="tab-tenders">
+            <div class="notice-items-list">
+              
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">23</span>
+                  <span class="month">Dec 2025</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag tag-tender">E-Tender</span>
+                  <h4><a href="javascript:void(0)">Short-term e-Tender notice for Supply & Procurement of Central Library Books</a></h4>
+                  <p class="notice-snippet">Bids are invited via the Govt. of Bihar e-Procurement portal from authorized publishers and book distributors.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download"><i class="fa-solid fa-file-pdf"></i> Tender Doc</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">23</span>
+                  <span class="month">Dec 2025</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag tag-tender">E-Tender</span>
+                  <h4><a href="javascript:void(0)">e-Tender for Physical Stock Verification & Barcode-based Library Management System</a></h4>
+                  <p class="notice-snippet">Automation and barcode tagging of library volumes and electronic accessioning.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download"><i class="fa-solid fa-file-pdf"></i> Tender Doc</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">23</span>
+                  <span class="month">Dec 2025</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag tag-tender">Equipment</span>
+                  <h4><a href="javascript:void(0)">Short-term e-Tender Notice for Procurement of Industrial 3D Printer for Fab Lab</a></h4>
+                  <p class="notice-snippet">Procurement under technical upgrade scheme for advanced prototyping lab.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download"><i class="fa-solid fa-file-pdf"></i> Tender Doc</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">24</span>
+                  <span class="month">Jan 2025</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag tag-tender">IT Infrastructure</span>
+                  <h4><a href="javascript:void(0)">Tender for 01 Gbps High-Speed Internet Leased Line Connectivity on OFC</a></h4>
+                  <p class="notice-snippet">Providing dedicated optical fiber leased line for campus backbone and hostel network.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download"><i class="fa-solid fa-file-pdf"></i> Tender Doc</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 3: PLACEMENT -->
+          <div class="tab-pane" id="tab-placement">
+            <div class="notice-items-list">
+              
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">28</span>
+                  <span class="month">Jan 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag tag-placement">Mega Drive</span>
+                  <h4><a href="javascript:void(0)">Annual State-Level Job Fair 2026 Organized at NCE Chandi Campus</a></h4>
+                  <p class="notice-snippet">Over 35+ top IT and core engineering companies participated with online and offline interview rounds.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download"><i class="fa-solid fa-file-lines"></i> Report</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">14</span>
+                  <span class="month">Feb 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag tag-placement">T&P Advisory</span>
+                  <h4><a href="javascript:void(0)">Important Notice – Beware of Impersonators and Unauthorized Recruitment Agents</a></h4>
+                  <p class="notice-snippet">Official warning instructing students that all recruitment at NCE Chandi is strictly conducted via the Training and Placement Cell.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download"><i class="fa-solid fa-file-pdf"></i> Read Notice</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 4: ACCOLADES -->
+          <div class="tab-pane" id="tab-accolades">
+            <div class="notice-items-list">
+              
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">15</span>
+                  <span class="month">Aug 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag">Institution Pride</span>
+                  <h4><a href="javascript:void(0)">NCE Chandi Student Innovators Win First Prize in National Smart Hackathon</a></h4>
+                  <p class="notice-snippet">Team 'Aryabhata' developed an AI-driven irrigation management model recognized at state level.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download"><i class="fa-solid fa-star"></i> View</a>
+                </div>
+              </div>
+
+              <div class="notice-item">
+                <div class="notice-date-badge">
+                  <span class="day">10</span>
+                  <span class="month">Jul 2026</span>
+                </div>
+                <div class="notice-details">
+                  <span class="category-tag">Faculty Research</span>
+                  <h4><a href="javascript:void(0)">Department of Civil Engineering Publishes International Paper on Sustainable Geopolymer Concrete</a></h4>
+                  <p class="notice-snippet">Research funded under TEQIP collaborative project and published in high-impact journal.</p>
+                </div>
+                <div class="notice-action">
+                  <a href="javascript:void(0)" class="btn-download"><i class="fa-solid fa-award"></i> View</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT NCE CHANDI & PRINCIPAL MESSAGE ================= -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-text-col">
+          <span class="section-tag">About The Institute</span>
+          <h2 class="section-title">Welcome to Nalanda College of Engineering, Chandi</h2>
+          <div class="title-underline left"></div>
+          
+          <p class="lead-p">
+            <strong>Nalanda College of Engineering (NCE), Chandi</strong> works under the Department of Science, Technology and Technical Education, Government of Bihar. It was established in 2008 by the Hon'ble Chief Minister on the historic land where Lord Buddha attained enlightenment and where the world-renowned ancient Nalanda University once thrived.
+          </p>
+          <p>
+            The institute was initiated to cater to the growing demand for world-class technical education in eastern India. Starting with undergraduate courses in four classical streams, the college has rapidly expanded to include frontier disciplines such as <strong>Artificial Intelligence & Machine Learning</strong>, <strong>Aeronautical Engineering</strong>, and Postgraduate (M.Tech) degrees.
+          </p>
+
+          <div class="about-highlights-list">
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Modern 35-acre green campus equipped with smart lecture halls & high-tech laboratories.</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>NBA Accredited Computer Science & Engineering department (2023–2025).</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>TEQIP-III funded institution with twinning arrangement and industry partnerships.</span>
+            </div>
+          </div>
+
+          <div class="about-stats-counter">
+            <div class="stat-box">
+              <span class="num">07</span>
+              <span class="label">Academic Branches</span>
+            </div>
+            <div class="stat-box">
+              <span class="num">1200+</span>
+              <span class="label">UG & PG Scholars</span>
+            </div>
+            <div class="stat-box">
+              <span class="num">60+</span>
+              <span class="label">Faculty Members</span>
+            </div>
+            <div class="stat-box">
+              <span class="num">16+</span>
+              <span class="label">Years of Glory</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="principal-col" id="principal-message">
+          <div class="principal-card">
+            <div class="principal-avatar">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <h3>Principal's Desk</h3>
+            <span class="principal-desig">Nalanda College of Engineering, Chandi</span>
+            <blockquote class="principal-quote">
+              "Technical education is the bedrock of societal transformation. At NCE Chandi, our purpose is to nurture inquisitive minds with rigorous engineering foundations, ethical values, and social empathy, enabling them to solve real-world problems and contribute meaningfully to our nation."
+            </blockquote>
+            <div class="principal-meta">
+              <strong>Prof. (Dr.) J. M. Rawat</strong>
+              <span>Principal, NCE Chandi</span>
+            </div>
+            <a href="javascript:void(0)" class="btn btn-outline-dark btn-sm">Read Complete Message</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACADEMIC DEPARTMENTS SECTION ================= -->
+  <section class="departments-section" id="departments">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag">Degrees & Branches</span>
+        <h2 class="section-title">Academic Departments</h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">Offering Bachelor of Technology (B.Tech) and Master of Technology (M.Tech) approved by AICTE and affiliated to Bihar Engineering University.</p>
+      </div>
+
+      <div class="dept-grid">
+        
+        <!-- CSE -->
+        <div class="dept-card" id="dept-cse">
+          <div class="dept-badge nba-badge">NBA Accredited</div>
+          <div class="dept-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Computer Science & Engineering</h3>
+          <p>Cutting-edge curriculum covering algorithms, data science, software engineering, and cloud computing with state-of-the-art computing labs.</p>
+          <div class="dept-meta">
+            <span><i class="fa-solid fa-users"></i> Intake: 60 Seats</span>
+            <span><i class="fa-solid fa-clock"></i> 4 Years (B.Tech)</span>
+          </div>
+        </div>
+
+        <!-- AI & ML -->
+        <div class="dept-card" id="dept-aiml">
+          <div class="dept-badge new-badge">Modern Branch</div>
+          <div class="dept-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Artificial Intelligence & ML</h3>
+          <p>Specialized program designed for machine learning algorithms, computer vision, natural language processing, and deep neural networks.</p>
+          <div class="dept-meta">
+            <span><i class="fa-solid fa-users"></i> Intake: 60 Seats</span>
+            <span><i class="fa-solid fa-clock"></i> 4 Years (B.Tech)</span>
+          </div>
+        </div>
+
+        <!-- Aeronautical -->
+        <div class="dept-card" id="dept-aero">
+          <div class="dept-badge">Premier Program</div>
+          <div class="dept-icon"><i class="fa-solid fa-jet-fighter-up"></i></div>
+          <h3>Aeronautical Engineering</h3>
+          <p>One of the pioneering public institutions in Bihar offering aerodynamics, aircraft design, flight mechanics, propulsion systems, and avionics.</p>
+          <div class="dept-meta">
+            <span><i class="fa-solid fa-users"></i> Intake: 60 Seats</span>
+            <span><i class="fa-solid fa-clock"></i> 4 Years (B.Tech)</span>
+          </div>
+        </div>
+
+        <!-- Civil -->
+        <div class="dept-card" id="dept-ce">
+          <div class="dept-icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+          <h3>Civil Engineering</h3>
+          <p>Strong focus on structural analysis, geotechnical engineering, transportation design, environmental management, and modern GIS surveying.</p>
+          <div class="dept-meta">
+            <span><i class="fa-solid fa-users"></i> Intake: 60 Seats</span>
+            <span><i class="fa-solid fa-clock"></i> 4 Years (B.Tech)</span>
+          </div>
+        </div>
+
+        <!-- Mechanical -->
+        <div class="dept-card" id="dept-me">
+          <div class="dept-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>Mechanical Engineering</h3>
+          <p>Broad-based education in thermodynamics, CAD/CAM robotics, fluid power systems, manufacturing technology, and material science.</p>
+          <div class="dept-meta">
+            <span><i class="fa-solid fa-users"></i> Intake: 60 Seats</span>
+            <span><i class="fa-solid fa-clock"></i> 4 Years (B.Tech)</span>
+          </div>
+        </div>
+
+        <!-- EEE -->
+        <div class="dept-card" id="dept-eee">
+          <div class="dept-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+          <h3>Electrical & Electronics Engg</h3>
+          <p>Covering power systems, high-voltage networks, control systems, microprocessors, smart grid operations, and renewable energy integration.</p>
+          <div class="dept-meta">
+            <span><i class="fa-solid fa-users"></i> Intake: 60 Seats</span>
+            <span><i class="fa-solid fa-clock"></i> 4 Years (B.Tech)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CAMPUS FACILITIES ================= -->
+  <section class="facilities-section" id="facilities">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag">Campus Infrastructure</span>
+        <h2 class="section-title">World-Class Campus Facilities</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-box">
+          <div class="fac-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+          <h4>Central Library</h4>
+          <p>Houses over 25,000 volumes, e-journals, DELNET membership, digital catalog, and spacious quiet study halls.</p>
+        </div>
+        <div class="facility-box">
+          <div class="fac-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h4>Central Computer Center</h4>
+          <p>Multiple state-of-the-art computer labs with high-end workstations, Linux/Windows servers, and high-speed fiber internet.</p>
+        </div>
+        <div class="facility-box">
+          <div class="fac-icon"><i class="fa-solid fa-hotel"></i></div>
+          <h4>Student Hostels</h4>
+          <p>Dedicated on-campus boys and girls hostels with hygienic dining halls, 24/7 security, and power backup.</p>
+        </div>
+        <div class="facility-box">
+          <div class="fac-icon"><i class="fa-solid fa-volleyball"></i></div>
+          <h4>Sports & Gymnasium</h4>
+          <p>Cricket and football grounds, basketball and badminton courts, table tennis, and modern fitness center.</p>
+        </div>
+        <div class="facility-box">
+          <div class="fac-icon"><i class="fa-solid fa-kit-medical"></i></div>
+          <h4>Medical Care Center</h4>
+          <p>On-campus health center with resident paramedic, emergency medicine, first aid, and ambulance assistance.</p>
+        </div>
+        <div class="facility-box">
+          <div class="fac-icon"><i class="fa-solid fa-wifi"></i></div>
+          <h4>Wi-Fi Campus</h4>
+          <p>Seamless 1 Gbps high-speed Wi-Fi connectivity throughout academic blocks, hostel areas, and central library.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRAINING & PLACEMENT SECTION ================= -->
+  <section class="placements-section" id="placements">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag">Career & Industry Interface</span>
+        <h2 class="section-title">Training & Placement Cell</h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">Bridging academia and premier industries with structured internships, coding camps, and campus recruitment drives.</p>
+      </div>
+
+      <div class="placement-stats-row">
+        <div class="p-stat-card">
+          <span class="val">85%+</span>
+          <span class="desc">Eligible Placement Rate</span>
+        </div>
+        <div class="p-stat-card">
+          <span class="val">50+</span>
+          <span class="desc">Visiting Recruiters</span>
+        </div>
+        <div class="p-stat-card">
+          <span class="val">₹14 LPA</span>
+          <span class="desc">Highest CTC Offered</span>
+        </div>
+        <div class="p-stat-card">
+          <span class="val">₹4.8 LPA</span>
+          <span class="desc">Average Package</span>
+        </div>
+      </div>
+
+      <div class="recruiters-wrapper">
+        <h3 class="recruiters-title">Our Valued Placement & Internship Partners</h3>
+        <div class="recruiters-tags-grid">
+          <div class="recruiter-tag"><i class="fa-solid fa-tower-cell"></i> Indus Towers</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-car"></i> MRF Tyres</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-gas-pump"></i> Indian Oil</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-shield-halved"></i> Quality Austria</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-microchip"></i> Spark Minda</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-plane"></i> Talisha Aerospace</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-code"></i> QSpiders</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-briefcase"></i> Intrainz</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-laptop"></i> Corizo</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-cubes"></i> Eleation</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-gears"></i> Kross Ltd</div>
+          <div class="recruiter-tag"><i class="fa-solid fa-building"></i> Ecospace</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHOTO GALLERY PREVIEW ================= -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag">Campus Chronicles</span>
+        <h2 class="section-title">Life at NCE Chandi</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=700&q=80" alt="Academic Block" />
+          <div class="gallery-overlay">
+            <h4>Main Administrative & Academic Block</h4>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=700&q=80" alt="Robotics & Hardware Lab" />
+          <div class="gallery-overlay">
+            <h4>Advanced Engineering Laboratories</h4>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=700&q=80" alt="Central Library" />
+          <div class="gallery-overlay">
+            <h4>Reading Hall & Digital Repository</h4>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=700&q=80" alt="Annual Cultural Fest" />
+          <div class="gallery-overlay">
+            <h4>Annual Techno-Cultural Fest 'Avishkar'</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & LOCATION ================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <span class="section-tag">Connect With Us</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline left"></div>
+          <p>For admissions, academic queries, or official correspondence, reach out to our campus office.</p>
+
+          <div class="contact-details-list">
+            <div class="c-detail">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Campus Address:</strong>
+                <p>Nalanda College of Engineering, Chandi, Nalanda, Bihar – 803108, India</p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Telephone Helpline:</strong>
+                <p>+91 (06111) 276222 / 276223</p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Official Email:</strong>
+                <p>principal@ncechandi.ac.in | info@ncechandi.ac.in</p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Office Working Hours:</strong>
+                <p>Monday – Saturday: 10:00 AM – 05:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <div class="contact-card-box">
+            <h3>Send a Message</h3>
+            <form id="contact-form" onsubmit="event.preventDefault(); handleFormSubmit('Message Sent', 'Thank you for reaching out. We will get back to you shortly.');">
+              <div class="form-group">
+                <label for="c-name">Full Name *</label>
+                <input type="text" id="c-name" class="form-control" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="c-email">Email Address *</label>
+                <input type="email" id="c-email" class="form-control" placeholder="name@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="c-subject">Subject *</label>
+                <input type="text" id="c-subject" class="form-control" placeholder="Query subject" required />
+              </div>
+              <div class="form-group">
+                <label for="c-message">Message *</label>
+                <textarea id="c-message" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Submit Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        
+        <div class="footer-col footer-about">
+          <div class="footer-logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h4>NCE Chandi</h4>
+          </div>
+          <p>Nalanda College of Engineering, Chandi is a premier state government engineering institution committed to academic brilliance, research, and innovation in engineering disciplines.</p>
+          <div class="social-icons">
+            <a href="https://twitter.com/ncechandi" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://facebook.com/NCEChandi" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Important Links</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.aicte-india.org" target="_blank"><i class="fa-solid fa-chevron-right"></i> AICTE India</a></li>
+            <li><a href="http://dstbihar.gov.in" target="_blank"><i class="fa-solid fa-chevron-right"></i> DSTTE, Govt. of Bihar</a></li>
+            <li><a href="https://beu-bih.ac.in" target="_blank"><i class="fa-solid fa-chevron-right"></i> Bihar Engineering University (BEU)</a></li>
+            <li><a href="http://bceceboard.bihar.gov.in" target="_blank"><i class="fa-solid fa-chevron-right"></i> BCECE Board</a></li>
+            <li><a href="https://state.bihar.gov.in" target="_blank"><i class="fa-solid fa-chevron-right"></i> Bihar State Citizen Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Portals</h4>
+          <ul class="footer-links">
+            <li><a href="#notices"><i class="fa-solid fa-chevron-right"></i> Academic Notices</a></li>
+            <li><a href="#departments"><i class="fa-solid fa-chevron-right"></i> Degree Programs</a></li>
+            <li><a href="javascript:void(0)" class="open-modal-btn" data-modal="modal-grievance"><i class="fa-solid fa-chevron-right"></i> Grievance Redressal</a></li>
+            <li><a href="#placements"><i class="fa-solid fa-chevron-right"></i> Training & Placements</a></li>
+            <li><a href="https://ncechandi.ac.in/student-panel/login" target="_blank"><i class="fa-solid fa-chevron-right"></i> Student ERP Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus Address</h4>
+          <p><i class="fa-solid fa-map-pin"></i> Chandi, Nalanda District, Bihar – 803108</p>
+          <p><i class="fa-solid fa-phone"></i> +91 (06111) 276222</p>
+          <p><i class="fa-solid fa-envelope"></i> principal@ncechandi.ac.in</p>
+          <div class="gh-pages-pill">
+            <i class="fa-brands fa-github"></i> Ready for GitHub Pages
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Nalanda College of Engineering, Chandi. All rights reserved.</p>
+        <p class="disclaimer-note">Educational replica & frontend clone prepared for GitHub Pages hosting.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= INTERACTIVE MODALS ================= -->
+
+  <!-- Modal: Inquiry Form -->
+  <div class="modal-overlay" id="modal-inquiry">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-regular fa-envelope"></i> Inquiry Form</h3>
+        <button class="modal-close" data-close="modal-inquiry">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle">Have a question regarding courses or admissions? Submit your inquiry below.</p>
+        <form onsubmit="event.preventDefault(); handleModalFormSubmit('modal-inquiry', 'Inquiry Submitted', 'Your inquiry has been logged successfully. Our admissions team will respond soon.');">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" class="form-control" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" class="form-control" placeholder="name@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Contact Number *</label>
+            <input type="tel" class="form-control" placeholder="10-digit mobile number" required />
+          </div>
+          <div class="form-group">
+            <label>Program of Interest</label>
+            <select class="form-control">
+              <option>B.Tech Computer Science & Engineering</option>
+              <option>B.Tech Artificial Intelligence & ML</option>
+              <option>B.Tech Aeronautical Engineering</option>
+              <option>B.Tech Civil Engineering</option>
+              <option>B.Tech Mechanical Engineering</option>
+              <option>B.Tech Electrical & Electronics</option>
+              <option>M.Tech Postgraduate Program</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Inquiry *</label>
+            <textarea class="form-control" rows="3" placeholder="Please detail your query..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Grievance Redressal -->
+  <div class="modal-overlay" id="modal-grievance">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-scale-balanced"></i> Grievance Redressal Portal</h3>
+        <button class="modal-close" data-close="modal-grievance">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle">NCE Chandi Grievance Redressal Committee. All complaints are treated confidentially.</p>
+        <form onsubmit="event.preventDefault(); handleModalFormSubmit('modal-grievance', 'Grievance Registered', 'Your grievance docket #GRV-2026-9481 has been registered. You will receive an SMS acknowledgment.');">
+          <div class="form-group">
+            <label>Applicant Type *</label>
+            <select class="form-control" required>
+              <option>Current Student</option>
+              <option>Faculty Member</option>
+              <option>Staff Member</option>
+              <option>Parent / Guardian</option>
+              <option>Alumnus</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Registration / Roll Number</label>
+            <input type="text" class="form-control" placeholder="e.g. 22105129001" />
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" class="form-control" placeholder="name@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Nature of Grievance *</label>
+            <select class="form-control" required>
+              <option>Academic & Examination</option>
+              <option>Hostel & Mess Amenities</option>
+              <option>Scholarship / Fee Matter</option>
+              <option>Harassment or Anti-Ragging</option>
+              <option>Library & IT Facilities</option>
+              <option>Other Matter</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Detailed Grievance Description *</label>
+            <textarea class="form-control" rows="3" placeholder="Provide complete facts..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger btn-block">Submit Official Grievance</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Track Grievance / Status -->
+  <div class="modal-overlay" id="modal-track">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-magnifying-glass"></i> Track Grievance / Inquiry</h3>
+        <button class="modal-close" data-close="modal-track">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle">Enter your docket ID or registered phone number to view live resolution status.</p>
+        <form onsubmit="event.preventDefault(); handleTrackSubmit();">
+          <div class="form-group">
+            <label>Docket ID or Mobile Number *</label>
+            <input type="text" id="track-id-input" class="form-control" placeholder="e.g. GRV-2026-9481 or 98XXXXXXXX" required />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Track Status</button>
+        </form>
+        <div id="track-result" style="display:none; margin-top: 15px; padding: 12px; background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 6px; color: #2e7d32; font-size: 0.9rem;">
+          <i class="fa-solid fa-circle-check"></i> <strong>Status: Under Active Review</strong><br>
+          Assigned to: Dean Academic Affairs Committee.<br>
+          Estimated Resolution: 2 Business Days.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Feedback Form -->
+  <div class="modal-overlay" id="modal-feedback">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-regular fa-comment-dots"></i> Feedback Portal</h3>
+        <button class="modal-close" data-close="modal-feedback">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle">Help us improve college services and academic facilities.</p>
+        <form onsubmit="event.preventDefault(); handleModalFormSubmit('modal-feedback', 'Feedback Received', 'Thank you for your valuable feedback! It helps us continually improve.');">
+          <div class="form-group">
+            <label>Your Role *</label>
+            <select class="form-control" required>
+              <option>Student</option>
+              <option>Faculty</option>
+              <option>Visitor / Guest</option>
+              <option>Employer / Recruiter</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Overall Experience Rating</label>
+            <select class="form-control">
+              <option>⭐⭐⭐⭐⭐ Excellent</option>
+              <option>⭐⭐⭐⭐ Very Good</option>
+              <option>⭐⭐⭐ Good</option>
+              <option>⭐⭐ Average</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Comments & Suggestions *</label>
+            <textarea class="form-control" rows="3" placeholder="Share your suggestions..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Feedback</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
